@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechDev Lab — Las mejores herramientas de IA gratuitas para automatizar tareas en 2026</title>
+<meta name="description" content="Guía práctica de herramientas de IA gratuitas para automatizar tareas en 2026, además de recursos sobre redes, scripting y productividad técnica.">
+
+<link rel="canonical" href="https://youcefbenoudjit38-ship-it.github.io/techdev-lab/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0F1420">
+
+<!-- Open Graph: previews when the page is shared -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="TechDev Lab">
+<meta property="og:title" content="TechDev Lab — Las mejores herramientas de IA gratuitas para automatizar tareas en 2026">
+<meta property="og:description" content="Guía práctica de herramientas de IA gratuitas para automatizar tareas en 2026, además de recursos sobre redes, scripting y productividad técnica.">
+<meta property="og:url" content="https://youcefbenoudjit38-ship-it.github.io/techdev-lab/">
+
+<!-- X/Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TechDev Lab — IA, redes, scripting y productividad">
+<meta name="twitter:description" content="Guías prácticas sobre IA, redes, sistemas, scripting y productividad técnica.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TechDev Lab",
+  "url": "https://youcefbenoudjit38-ship-it.github.io/techdev-lab/",
+  "inLanguage": "es-ES",
+  "description": "Guía práctica de herramientas de IA gratuitas para automatizar tareas en 2026, además de recursos sobre redes, scripting y productividad técnica."
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+--bg:#0F1420;
+--bg-panel:#141B2B;
+--bg-panel-2:#182338;
+--ink:#E8ECF4;
+--ink-dim:#9AA5B8;
+--ink-faint:#69738A;
+--accent:#4FD1C5;
+--accent-warm:#F2A65A;
+--line:#26304A;
+--code-bg:#0B0F19;
+--radius-s:4px;
+--radius-m:10px;
+--maxw:1120px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+margin:0;
+background:var(--bg);
+color:var(--ink);
+font-family:'Inter',system-ui,sans-serif;
+line-height:1.65;
+-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+font-family:'Space Grotesk',system-ui,sans-serif;
+font-weight:600;
+color:var(--ink);
+line-height:1.2;
+margin:0 0 .5em 0;
+}
+a{color:var(--accent); text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:focus-visible, button:focus-visible{outline:2px solid var(--accent-warm); outline-offset:3px;}
+img{max-width:100%; display:block;}
+table{border-collapse:collapse; width:100%;}
+code, pre, .mono{font-family:'JetBrains Mono',monospace;}
+p{max-width:70ch;}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+
+/* ---------- Header ---------- */
+header.site-header{
+border-bottom:1px solid var(--line);
+background:var(--bg-panel);
+position:sticky; top:0; z-index:10;
+}
+.site-header .wrap{
+display:flex; align-items:center; justify-content:space-between;
+padding-top:18px; padding-bottom:18px; gap:24px; flex-wrap:wrap;
+}
+.brand{display:flex; align-items:baseline; gap:10px;}
+.brand-mark{
+width:34px; height:34px; border-radius:8px;
+background:linear-gradient(135deg,var(--accent),#2E8C82);
+display:flex; align-items:center; justify-content:center;
+font-family:'Space Grotesk',sans-serif; font-weight:700; color:#0B0F19;
+flex-shrink:0;
+}
+.brand a{color:var(--ink); font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1.25rem;}
+.brand a:hover{text-decoration:none;}
+.tagline{color:var(--ink-faint); font-size:.85rem; display:none;}
+nav.main-nav ul{
+list-style:none; display:flex; gap:28px; margin:0; padding:0; flex-wrap:wrap;
+}
+nav.main-nav a{
+color:var(--ink-dim); font-size:.95rem; font-weight:500;
+padding:4px 0; border-bottom:2px solid transparent;
+}
+nav.main-nav a:hover, nav.main-nav a.current{
+color:var(--ink); text-decoration:none; border-bottom-color:var(--accent);
+}
+
+@media(min-width:700px){ .tagline{display:inline;} }
+
+/* ---------- Hero / intro featured ---------- */
+.hero{
+border-bottom:1px solid var(--line);
+padding:56px 0 40px;
+}
+.hero .kicker{
+color:var(--accent); font-weight:600; font-size:.95rem; margin-bottom:14px;
+}
+.hero h1{
+font-size:clamp(1.9rem,4vw,2.9rem);
+max-width:22ch;
+}
+.hero .dek{
+color:var(--ink-dim); font-size:1.1rem; max-width:62ch; margin-top:14px;
+}
+.hero .meta{
+margin-top:20px; color:var(--ink-faint); font-size:.85rem;
+display:flex; gap:16px; flex-wrap:wrap;
+}
+
+/* ---------- Article layout ---------- */
+main{padding:44px 0 20px;}
+article.post{margin-bottom:64px;}
+article.post > .wrap{max-width:760px;}
+.post-body h2{
+font-size:1.5rem; margin-top:2.4em; padding-top:.6em; border-top:1px solid var(--line);
+}
+.post-body h2:first-of-type{margin-top:0; padding-top:0; border-top:none;}
+.post-body h3{font-size:1.15rem; margin-top:1.8em;}
+.post-body p{color:var(--ink);}
+.post-body ul, .post-body ol{max-width:68ch; padding-left:1.3em;}
+.post-body li{margin-bottom:.4em;}
+
+figure.img-slot{
+margin:1.6em 0; border:1px dashed var(--line); border-radius:var(--radius-m);
+background:var(--bg-panel); padding:14px;
+}
+figure.img-slot .ph-img{
+width:100%; max-width:512px; aspect-ratio:1/1; margin:0 auto;
+border-radius:var(--radius-s); display:block;
+}
+figure.img-slot .ph{
+width:100%; max-width:512px; aspect-ratio:1/1; margin:0 auto;
+background:
+repeating-linear-gradient(45deg, var(--bg-panel-2) 0 12px, var(--bg-panel) 12px 24px);
+border-radius:var(--radius-s);
+display:flex; align-items:center; justify-content:center;
+color:var(--ink-faint); font-size:.85rem; text-align:center; padding:16px;
+}
+figcaption{color:var(--ink-faint); font-size:.82rem; margin-top:8px; text-align:center;}
+
+pre{
+background:var(--code-bg); border:1px solid var(--line); border-radius:var(--radius-m);
+padding:18px 20px; overflow-x:auto; margin:1.4em 0; font-size:.88rem; line-height:1.55;
+}
+pre code{color:#B7E3DE; background:none;}
+p code, li code{
+background:var(--code-bg); border:1px solid var(--line); border-radius:4px;
+padding:.12em .4em; font-size:.86em; color:var(--accent);
+}
+
+.table-wrap{overflow-x:auto; margin:1.6em 0; border:1px solid var(--line); border-radius:var(--radius-m);}
+table.compare{min-width:520px;}
+table.compare th, table.compare td{
+text-align:left; padding:12px 16px; border-bottom:1px solid var(--line); font-size:.92rem;
+}
+table.compare th{
+background:var(--bg-panel-2); color:var(--ink); font-family:'Space Grotesk',sans-serif; font-weight:600;
+}
+table.compare tr:last-child td{border-bottom:none;}
+table.compare td.free{color:var(--accent); font-weight:500;}
+
+ol.workflow{list-style:none; padding:0; counter-reset:step; margin:1.6em 0;}
+ol.workflow li{
+counter-increment:step; position:relative; padding:14px 0 14px 52px;
+border-bottom:1px solid var(--line);
+}
+ol.workflow li:last-child{border-bottom:none;}
+ol.workflow li::before{
+content:counter(step);
+position:absolute; left:0; top:12px;
+width:34px; height:34px; border-radius:50%;
+background:var(--bg-panel-2); border:1px solid var(--line);
+color:var(--accent-warm); font-family:'Space Grotesk',sans-serif; font-weight:700;
+display:flex; align-items:center; justify-content:center; font-size:.9rem;
+}
+ol.workflow strong{color:var(--ink); font-family:'Space Grotesk',sans-serif;}
+
+.category-tag{
+display:inline-block; font-size:.78rem; color:var(--accent-warm);
+border:1px solid var(--line); border-radius:99px; padding:3px 12px; margin-bottom:14px;
+}
+
+/* ---------- Secondary posts section ---------- */
+.section-heading{
+display:flex; align-items:baseline; justify-content:space-between;
+border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:8px;
+}
+.section-heading h2{font-size:1.3rem; margin:0;}
+.section-heading a{font-size:.85rem;}
+
+/* ---------- Footer ---------- */
+footer.site-footer{
+border-top:1px solid var(--line); background:var(--bg-panel);
+padding:36px 0; margin-top:40px;
+}
+footer.site-footer .wrap{
+display:flex; justify-content:space-between; flex-wrap:wrap; gap:18px;
+color:var(--ink-faint); font-size:.85rem;
+}
+footer.site-footer nav ul{list-style:none; display:flex; gap:20px; margin:0; padding:0; flex-wrap:wrap;}
+footer.site-footer a{color:var(--ink-dim);}
+
+@media(max-width:620px){
+.hero{padding:40px 0 28px;}
+article.post{margin-bottom:48px;}
+figure.img-slot .ph{max-width:100%;}
+footer.site-footer .wrap{flex-direction:column;}
+}
+
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+}
+
+.category-anchor{ display:block; position:relative; top:-90px; visibility:hidden; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="wrap">
+<div class="brand">
+<span class="brand-mark" aria-hidden="true">TD</span>
+<a href="/">TechDev Lab<span class="tagline"> · Automatiza más, escribe menos código</span></a>
+</div>
+<nav class="main-nav" aria-label="Menú principal">
+<ul>
+<li><a href="#ia-y-automatizacion" class="current">IA y Automatización</a></li>
+<li><a href="#redes-y-sistemas">Redes y Sistemas</a></li>
+<li><a href="#programacion-y-scripting">Programación y Scripting</a></li>
+<li><a href="#herramientas-y-productividad">Herramientas y Productividad</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<div class="hero">
+<div class="wrap">
+<p class="kicker">Artículo destacado</p>
+<h1>Las mejores herramientas de IA gratuitas para automatizar tareas en 2026</h1>
+<p class="dek">Correo, contenido, flujos de trabajo sin código y hasta tu propio escritorio: así es como puedes delegarle a la IA las tareas repetitivas sin pagar ni una suscripción, con ejemplos reales que puedes copiar hoy mismo.</p>
+<div class="meta">
+<span>Publicado en <a href="#ia-y-automatizacion">IA y Automatización</a></span>
+<span>· Lectura de 11 min</span>
+</div>
+</div>
+</div>
+
+<main>
+
+<!-- ============ ARTÍCULO PRINCIPAL ============ -->
+<span class="category-anchor" id="ia-y-automatizacion"></span>
+<article class="post" id="herramientas-ia-automatizacion">
+<div class="wrap post-body">
+
+<p>Si en 2025 automatizar significaba pagar por Zapier o aprender Python a medias, en 2026 el panorama cambió: hay agentes de IA gratuitos capaces de leer tu correo, ordenar tus tareas, escribir borradores y conectar aplicaciones enteras sin que escribas una sola línea de código. El problema ya no es la falta de herramientas, sino saber cuál usar para cada tarea y cómo combinarlas sin perder tiempo probando todas.</p>
+
+<p>Esta guía reúne las herramientas de IA gratuitas más útiles para automatizar el trabajo diario, organizadas en cuatro frentes: comunicación, contenido, flujos sin código y automatización local en tu propio equipo. En cada sección encontrarás un caso práctico, un prompt que puedes copiar y adaptar, y comparativas para elegir rápido.</p>
+
+<h2 id="correo-comunicacion">1. Automatiza tu bandeja de entrada y tu comunicación diaria</h2>
+
+<p>El correo y los mensajes siguen siendo la mayor fuente de tiempo perdido en cualquier trabajo. La IA generativa, integrada directamente en tu gestor de correo o mediante asistentes externos, puede resumir hilos largos, redactar respuestas en tu tono habitual y priorizar lo urgente automáticamente.</p>
+
+<p><strong>Caso práctico:</strong> imagina que vuelves de vacaciones con 200 correos sin leer. En lugar de abrirlos uno a uno, puedes pedirle a un asistente de IA que los resuma por remitente y urgencia, y que redacte una respuesta corta para los que solo necesitan una confirmación.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPgogIDxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KCiAgPCEtLSBlbnZlbG9wZSAtLT4KICA8cmVjdCB4PSI5NiIgeT0iMTUwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIxMiIgcng9IjEwIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGQ9Ik05NiAxNjAgTDI1NiAyODAgTDQxNiAxNjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRGRDFDNSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KCiAgPCEtLSBzb3J0ZWQgdGFnIHJvd3MgLS0+CiAgPGc+CiAgICA8cmVjdCB4PSIxNDAiIHk9IjM5MiIgd2lkdGg9IjI2IiBoZWlnaHQ9IjI2IiByeD0iNiIgZmlsbD0iIzRGRDFDNSIvPgogICAgPHJlY3QgeD0iMTgwIiB5PSIzOTgiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjMkEzNTUwIi8+CiAgICA8cmVjdCB4PSIzNDAiIHk9IjM5OCIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iIzRGRDFDNSIgb3BhY2l0eT0iMC41NSIvPgogIDwvZz4KICA8Zz4KICAgIDxyZWN0IHg9IjE0MCIgeT0iNDMyIiB3aWR0aD0iMjYiIGhlaWdodD0iMjYiIHJ4PSI2IiBmaWxsPSIjRjJBNjVBIi8+CiAgICA8cmVjdCB4PSIxODAiIHk9IjQzOCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNCIgcng9IjciIGZpbGw9IiMyQTM1NTAiLz4KICAgIDxyZWN0IHg9IjM4MCIgeT0iNDM4IiB3aWR0aD0iNDYiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjRjJBNjVBIiBvcGFjaXR5PSIwLjU1Ii8+CiAgPC9nPgoKICA8IS0tIHNwYXJrIC8gQUkgbWFya2VyIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1MiwxMDgpIj4KICAgIDxwYXRoIGQ9Ik0wIC0yNiBMNyAtNyBMMjYgMCBMNyA3IEwwIDI2IEwtNyA3IEwtMjYgMCBMLTcgLTcgWiIgZmlsbD0iI0YyQTY1QSIvPgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjAsOTApIj4KICAgIDxwYXRoIGQ9Ik0wIC0xNCBMNCAtNCBMMTQgMCBMNCA0IEwwIDE0IEwtNCA0IEwtMTQgMCBMLTQgLTQgWiIgZmlsbD0iIzRGRDFDNSIvPgogIDwvZz4KPC9zdmc+Cg==" width="512" height="512" loading="lazy" alt="Bandeja de entrada de correo organizada automáticamente por un asistente de inteligencia artificial, con mensajes agrupados por urgencia">
+<figcaption>Bandeja de entrada organizada automáticamente por IA.</figcaption>
+</figure>
+
+<p>Un prompt de ejemplo para usar con Claude, ChatGPT o Gemini pegando el contenido de tus correos:</p>
+
+<pre><code>Actúa como mi asistente de bandeja de entrada.
+Te voy a pegar el texto de varios correos.
+Para cada uno, responde en este formato:
+
+- Remitente:
+- Resumen en una frase:
+- Urgencia (alta / media / baja):
+- Acción sugerida:
+- Si aplica, un borrador de respuesta de 3 líneas en tono cercano pero profesional.
+
+Al final, dame una lista ordenada por urgencia con los 3 correos que debo responder hoy.
+
+Correos:
+[pega aquí el contenido]</code></pre>
+
+<p>Para automatizar esto sin copiar y pegar cada vez, herramientas como <strong>n8n</strong> (de código abierto y autoalojable de forma gratuita) o <strong>Make</strong> permiten conectar tu correo con un modelo de IA y que el resumen llegue solo cada mañana a tu Slack o Telegram.</p>
+
+<div class="table-wrap">
+<table class="compare">
+<caption class="sr-only">Comparativa de herramientas para automatizar correo y comunicación</caption>
+<thead>
+<tr><th>Herramienta</th><th>Uso principal</th><th>Plan gratuito</th><th>Ideal para</th></tr>
+</thead>
+<tbody>
+<tr><td>Gemini en Gmail</td><td>Resumir hilos y redactar respuestas</td><td class="free">Incluido en cuentas personales</td><td>Uso individual dentro de Gmail</td></tr>
+<tr><td>n8n</td><td>Automatizar flujos entre correo, IA y chat</td><td class="free">Ilimitado autoalojado</td><td>Usuarios con algo de perfil técnico</td></tr>
+<tr><td>Make</td><td>Conectar apps sin código</td><td class="free">1.000 operaciones/mes</td><td>Flujos simples sin instalar nada</td></tr>
+<tr><td>Claude / ChatGPT (chat web)</td><td>Resumir y redactar bajo demanda</td><td class="free">Con límites de uso diario</td><td>Tareas puntuales, sin automatizar</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="contenido">2. Genera y organiza contenido con asistentes de IA</h2>
+
+<p>Escribir borradores, estructurar ideas o transformar notas dispersas en documentos presentables es otro punto donde la IA gratuita ahorra horas. La clave no es pedirle a la IA que "escriba algo", sino darle una estructura clara para que el resultado necesite poca edición.</p>
+
+<p><strong>Caso práctico:</strong> tienes una reunión grabada o un cúmulo de notas sueltas y necesitas convertirlas en un informe legible para tu equipo antes de la tarde.</p>
+
+<pre><code>Tengo las siguientes notas desordenadas de una reunión.
+Organízalas en un informe con esta estructura:
+
+1. Objetivo de la reunión (1 frase)
+2. Decisiones tomadas (lista con viñetas)
+3. Tareas asignadas (tabla: tarea / responsable / fecha límite)
+4. Temas pendientes para la próxima reunión
+
+Usa un tono neutro y directo. No inventes datos que no estén en las notas.
+
+Notas:
+[pega aquí tus notas]</code></pre>
+
+<p>Herramientas como <strong>NotebookLM</strong> de Google son especialmente útiles cuando trabajas con varias fuentes (documentos, transcripciones, enlaces) y quieres que la IA responda solo basándose en ese material, sin inventar información. Para contenido visual, <strong>Canva</strong> con su Magic Studio permite generar plantillas e imágenes de apoyo dentro del plan gratuito.</p>
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Herramienta</th><th>Uso principal</th><th>Plan gratuito</th><th>Ideal para</th></tr>
+</thead>
+<tbody>
+<tr><td>NotebookLM</td><td>Resumir y responder sobre documentos propios</td><td class="free">Sí, con límite de fuentes</td><td>Investigación y estudio</td></tr>
+<tr><td>Claude / ChatGPT</td><td>Redacción y reestructuración de textos</td><td class="free">Con límites de uso diario</td><td>Informes, correos, guiones</td></tr>
+<tr><td>Canva Magic Studio</td><td>Diseño e imágenes asistidas por IA</td><td class="free">Funciones básicas incluidas</td><td>Contenido visual rápido</td></tr>
+<tr><td>Perplexity</td><td>Búsqueda con respuestas citadas</td><td class="free">Búsquedas ilimitadas básicas</td><td>Investigación con fuentes verificables</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="no-code">3. Automatiza flujos de trabajo repetitivos sin programar</h2>
+
+<p>Aquí es donde la automatización deja de ser puntual y se vuelve un sistema que trabaja por ti todos los días. Plataformas como <strong>n8n</strong>, <strong>Make</strong> o <strong>Zapier</strong> permiten crear flujos ("workflows") que conectan formularios, hojas de cálculo, correo, chats y modelos de IA, disparados automáticamente por un evento.</p>
+
+<p><strong>Caso práctico:</strong> cada vez que alguien completa un formulario de contacto, quieres que la IA clasifique la consulta, la resuma y avise a la persona correcta en Slack, sin que nadie tenga que revisar el formulario manualmente.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPgogIDxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KCiAgPCEtLSBjb25uZWN0aW5nIGxpbmVzIC0tPgogIDxwYXRoIGQ9Ik0xNDAgMTMwIEMgMjAwIDEzMCwgMjAwIDI1NiwgMjU2IDI1NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkEzNTUwIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8cGF0aCBkPSJNMjU2IDI1NiBDIDMxMiAyNTYsIDMxMiAxMzAsIDM3MiAxMzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJBMzU1MCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPHBhdGggZD0iTTI1NiAyNTYgTCAyNTYgMzcyIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQTM1NTAiIHN0cm9rZS13aWR0aD0iMyIvPgoKICA8IS0tIG5vZGU6IGZvcm11bGFyaW8gLS0+CiAgPHJlY3QgeD0iNzAiIHk9Ijk0IiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjcyIiByeD0iMTAiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMTQwIiB5PSIxMjYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNFOEVDRjQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9IjYwMCI+Rm9ybXVsYXJpbzwvdGV4dD4KICA8dGV4dCB4PSIxNDAiIHk9IjE0NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzlBQTVCOCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj5udWV2byBtZW5zYWplPC90ZXh0PgoKICA8IS0tIG5vZGU6IElBIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iNTIiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzRGRDFDNSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPHRleHQgeD0iMjU2IiB5PSIyNTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM0RkQxQzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjcwMCI+SUE8L3RleHQ+CiAgPHRleHQgeD0iMjU2IiB5PSIyNzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM5QUE1QjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSI+Y2xhc2lmaWNhPC90ZXh0PgoKICA8IS0tIG5vZGU6IG5vdGlmaWNhY2lvbiAtLT4KICA8cmVjdCB4PSIzMDIiIHk9Ijk0IiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjcyIiByeD0iMTAiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMzcyIiB5PSIxMjYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNFOEVDRjQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9IjYwMCI+Tm90aWZpY2FjacOzbjwvdGV4dD4KICA8dGV4dCB4PSIzNzIiIHk9IjE0NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzlBQTVCOCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj5hIFNsYWNrPC90ZXh0PgoKICA8IS0tIG5vZGU6IHJlc3VsdGFkbyAtLT4KICA8cmVjdCB4PSIxODYiIHk9IjM3MiIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI3MiIgcng9IjEwIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iNDA0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRThFQ0Y0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSI2MDAiPlJlc3VtZW48L3RleHQ+CiAgPHRleHQgeD0iMjU2IiB5PSI0MjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM5QUE1QjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiI+KyB1cmdlbmNpYTwvdGV4dD4KCiAgPCEtLSBhcnJvd2hlYWRzIC0tPgogIDxwYXRoIGQ9Ik0zNjYgMTMwIGwxMCAtNiBsMCAxMiBaIiBmaWxsPSIjNEZEMUM1Ii8+CiAgPHBhdGggZD0iTTI1NiAzNjYgbC02IDEwIGwxMiAwIFoiIGZpbGw9IiNGMkE2NUEiLz4KPC9zdmc+Cg==" width="512" height="512" loading="lazy" alt="Diagrama de un flujo de automatización sin código con un nodo de inteligencia artificial clasificando un formulario de contacto">
+<figcaption>Flujo sin código: formulario, IA clasificadora y notificación.</figcaption>
+</figure>
+
+<p>Un flujo típico en n8n para este caso combina tres bloques: un disparador (webhook del formulario), un nodo de IA que clasifica el texto, y una acción final (enviar mensaje). El prompt del nodo de IA podría ser:</p>
+
+<pre><code>Clasifica el siguiente mensaje de contacto en una de estas categorías:
+Soporte técnico / Ventas / Colaboraciones / Otro.
+
+Devuelve solo un JSON con este formato:
+{
+"categoria": "",
+"resumen": "una frase",
+"urgente": true o false
+}
+
+Mensaje: {{ $json.mensaje }}</code></pre>
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Herramienta</th><th>Uso principal</th><th>Plan gratuito</th><th>Ideal para</th></tr>
+</thead>
+<tbody>
+<tr><td>n8n</td><td>Automatización avanzada con nodos de IA</td><td class="free">Ilimitado, autoalojado</td><td>Flujos complejos y personalizables</td></tr>
+<tr><td>Zapier</td><td>Conectar apps populares rápidamente</td><td class="free">100 tareas/mes</td><td>Principiantes, flujos simples</td></tr>
+<tr><td>Make</td><td>Automatización visual por escenarios</td><td class="free">1.000 operaciones/mes</td><td>Flujos con lógica visual</td></tr>
+<tr><td>IFTTT</td><td>Disparadores simples entre servicios</td><td class="free">Con límite de applets activos</td><td>Automatizaciones domésticas y móviles</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="local-escritorio">4. Combina IA local y scripts para automatizar tu escritorio</h2>
+
+<p>No todo debe depender de la nube. Ejecutar modelos de IA de forma local, con <strong>Ollama</strong>, permite automatizar tareas sensibles (documentos internos, datos de clientes) sin enviar nada a servidores externos, y sin coste de suscripción. Combinado con pequeños scripts, puedes crear automatizaciones de escritorio muy potentes.</p>
+
+<p><strong>Caso práctico:</strong> quieres que cada archivo PDF que llegue a una carpeta se renombre automáticamente según su contenido, usando un modelo de IA local para leer el texto y generar el nombre.</p>
+
+<pre><code># Ejemplo simplificado en Python usando un modelo local vía Ollama
+import ollama
+import os
+
+carpeta = "./entrantes"
+
+for archivo in os.listdir(carpeta):
+if archivo.endswith(".pdf"):
+texto = extraer_texto_pdf(os.path.join(carpeta, archivo))
+respuesta = ollama.chat(model="llama3", messages=[
+{"role": "user", "content": f"Resume este documento en 4 palabras, formato archivo: {texto[:2000]}"}
+])
+nuevo_nombre = respuesta["message"]["content"].strip().replace(" ", "_")
+os.rename(os.path.join(carpeta, archivo), os.path.join(carpeta, f"{nuevo_nombre}.pdf"))</code></pre>
+
+<p>Para quienes prefieren no tocar código, <strong>Power Automate Desktop</strong> (gratuito en Windows) permite grabar acciones del ratón y teclado y combinarlas con conectores de IA sin escribir scripts.</p>
+
+<h3>Flujo de trabajo completo: resumen semanal automático con n8n y una IA</h3>
+
+<p>Para cerrar, así se ve un flujo real de principio a fin, combinando varias de las herramientas anteriores para recibir cada lunes un resumen de tus pendientes de la semana:</p>
+
+<ol class="workflow">
+<li><strong>Conecta tus fuentes.</strong> En n8n, añade nodos de entrada para tu calendario, tu gestor de tareas y tu correo.</li>
+<li><strong>Programa el disparador.</strong> Configura un nodo "Schedule" para que el flujo se ejecute todos los lunes a las 8:00.</li>
+<li><strong>Envía los datos a la IA.</strong> Añade un nodo de IA (por ejemplo, conectado a la API gratuita de un modelo) con un prompt que pida un resumen priorizado.</li>
+<li><strong>Da formato al resultado.</strong> Usa un nodo de función para convertir la respuesta en una lista legible.</li>
+<li><strong>Entrega el resumen.</strong> Termina el flujo enviando el mensaje a Telegram, Slack o tu propio correo.</li>
+<li><strong>Revisa y ajusta el prompt.</strong> Las primeras semanas, afina las instrucciones según lo que realmente te resulte útil leer cada lunes.</li>
+</ol>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPgogIDxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KCiAgPCEtLSBjaGFpbiBsaW5lIC0tPgogIDxwYXRoIGQ9Ik05NiAxMzAgTDE3MiAyMDAgTDk2IDI3MCBMMTcyIDM0MCBMOTYgNDEwIEw0MDAgNDEwIgogICAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJBMzU1MCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPHBhdGggZD0iTTE3MiAyMDAgTDQwMCAxMzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJBMzU1MCIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPHBhdGggZD0iTTE3MiAzNDAgTDQwMCAyNzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJBMzU1MCIgc3Ryb2tlLXdpZHRoPSIzIi8+CgogIDwhLS0gc2l4IG5vZGVzIC0tPgogIDxnIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0U4RUNGNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICA8Y2lyY2xlIGN4PSI5NiIgY3k9IjEzMCIgcj0iMjYiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzRGRDFDNSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgICA8dGV4dCB4PSI5NiIgeT0iMTM0Ij4xPC90ZXh0PgogICAgPHRleHQgeD0iOTYiIHk9IjE2OCIgZmlsbD0iIzlBQTVCOCIgZm9udC1zaXplPSIxMSI+Q2FsZW5kYXJpbzwvdGV4dD4KCiAgICA8Y2lyY2xlIGN4PSI0MDAiIGN5PSIxMzAiIHI9IjI2IiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIvPgogICAgPHRleHQgeD0iNDAwIiB5PSIxMzQiPjI8L3RleHQ+CiAgICA8dGV4dCB4PSI0MDAiIHk9IjE2OCIgZmlsbD0iIzlBQTVCOCIgZm9udC1zaXplPSIxMSI+UHJvZ3JhbWFkb3I8L3RleHQ+CgogICAgPGNpcmNsZSBjeD0iMTcyIiBjeT0iMjAwIiByPSIyNiIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjRjJBNjVBIiBzdHJva2Utd2lkdGg9IjMiLz4KICAgIDx0ZXh0IHg9IjE3MiIgeT0iMjA0Ij4zPC90ZXh0PgogICAgPHRleHQgeD0iMTcyIiB5PSIyMzgiIGZpbGw9IiM5QUE1QjgiIGZvbnQtc2l6ZT0iMTEiPk5vZG8gSUE8L3RleHQ+CgogICAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMjcwIiByPSIyNiIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjRjJBNjVBIiBzdHJva2Utd2lkdGg9IjMiLz4KICAgIDx0ZXh0IHg9IjQwMCIgeT0iMjc0Ij40PC90ZXh0PgogICAgPHRleHQgeD0iNDAwIiB5PSIzMDgiIGZpbGw9IiM5QUE1QjgiIGZvbnQtc2l6ZT0iMTEiPkZvcm1hdG88L3RleHQ+CgogICAgPGNpcmNsZSBjeD0iOTYiIGN5PSIyNzAiIHI9IjI2IiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIvPgogICAgPHRleHQgeD0iOTYiIHk9IjI3NCI+NTwvdGV4dD4KICAgIDx0ZXh0IHg9Ijk2IiB5PSIzMDgiIGZpbGw9IiM5QUE1QjgiIGZvbnQtc2l6ZT0iMTEiPlRhcmVhczwvdGV4dD4KCiAgICA8Y2lyY2xlIGN4PSI5NiIgY3k9IjQxMCIgcj0iMjYiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzRGRDFDNSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgICA8dGV4dCB4PSI5NiIgeT0iNDE0Ij42PC90ZXh0PgogICAgPHRleHQgeD0iOTYiIHk9IjQ0OCIgZmlsbD0iIzlBQTVCOCIgZm9udC1zaXplPSIxMSI+RW50cmVnYTwvdGV4dD4KICA8L2c+CgogIDxyZWN0IHg9IjM2MCIgeT0iMzkyIiB3aWR0aD0iODAiIGhlaWdodD0iMzYiIHJ4PSI4IiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iNDE1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNEZEMUM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI2MDAiPlRlbGVncmFtPC90ZXh0Pgo8L3N2Zz4K" width="512" height="512" loading="lazy" alt="Flujo de automatización semanal en n8n con seis nodos conectados que combinan calendario, tareas y un modelo de inteligencia artificial">
+<figcaption>Flujo semanal en n8n: calendario, tareas y resumen entregado por IA.</figcaption>
+</figure>
+
+<p>Ninguna de estas herramientas exige presupuesto ni conocimientos avanzados de programación para empezar. Lo importante es elegir una sola automatización, dejarla funcionando una semana y, a partir de ahí, ir sumando piezas: bandeja de entrada, contenido, flujos sin código y finalmente scripts locales cuando quieras ir más allá.</p>
+
+</div>
+</article>
+
+<!-- ============ SECCIÓN: ÚLTIMOS ARTÍCULOS ============ -->
+<div class="wrap">
+<div class="section-heading">
+<h2>Más en el blog</h2>
+</div>
+</div>
+
+<!-- ============ ARTÍCULO SECUNDARIO 1: REDES ============ -->
+<span class="category-anchor" id="redes-y-sistemas"></span>
+<article class="post" id="comandos-cmd-diagnostico-red">
+<div class="wrap post-body">
+<span class="category-tag">Redes y Sistemas</span>
+<h2 style="border:none; margin-top:0; padding-top:0; font-size:1.8rem;">Guía de comandos CMD para diagnóstico de red y optimización de latencia</h2>
+
+<p>Cuando una conexión va lenta o una aplicación no carga, no siempre hace falta reiniciar el router. La consola de Windows (CMD) incluye herramientas de diagnóstico de red que existen desde hace décadas y que siguen siendo las más rápidas para encontrar el origen del problema: tu equipo, tu red local o el proveedor de internet.</p>
+
+<h3>1. ipconfig: revisa tu configuración de red</h3>
+<p>Es el primer comando a ejecutar. Muestra tu dirección IP, máscara de subred y puerta de enlace.</p>
+<pre><code>ipconfig /all</code></pre>
+<p>Si sospechas que el problema es una IP obsoleta o un caché DNS corrupto, estos dos comandos suelen resolverlo:</p>
+<pre><code>ipconfig /release
+ipconfig /renew
+ipconfig /flushdns</code></pre>
+
+<h3>2. ping: comprueba si hay conexión y mide la latencia</h3>
+<p><code>ping</code> envía paquetes a una dirección y mide cuánto tardan en volver (en milisegundos). Una latencia alta o pérdida de paquetes indica problemas de red antes incluso de abrir un navegador.</p>
+<pre><code>ping 8.8.8.8
+ping -t google.com</code></pre>
+<p>El parámetro <code>-t</code> hace que el ping se repita indefinidamente, útil para ver si la conexión se cae de forma intermitente mientras trabajas.</p>
+
+<h3>3. tracert: localiza dónde se pierde la conexión</h3>
+<p>Muestra cada "salto" (router intermedio) por el que pasa tu conexión hasta llegar al destino. Si la latencia se dispara en un salto concreto, ahí está el cuello de botella.</p>
+<pre><code>tracert youtube.com</code></pre>
+
+<h3>4. pathping: combina ping y tracert</h3>
+<p>Más lento que los anteriores, pero más preciso: analiza cada salto durante varios segundos y calcula el porcentaje de pérdida de paquetes en cada uno, ideal para diagnosticar problemas intermitentes.</p>
+<pre><code>pathping 192.168.1.1</code></pre>
+
+<h3>5. nslookup: verifica la resolución de dominios</h3>
+<p>Comprueba si un nombre de dominio se está resolviendo correctamente a una IP, útil para detectar problemas de DNS.</p>
+<pre><code>nslookup github.com</code></pre>
+
+<h3>6. netstat: revisa las conexiones activas</h3>
+<p>Lista todas las conexiones de red abiertas en tu equipo, con el puerto y el estado. Sirve para detectar aplicaciones que consumen ancho de banda sin que lo notes.</p>
+<pre><code>netstat -an</code></pre>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMTUwIiByPSIzNCIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjMiLz4KPHRleHQgeD0iMjU2IiB5PSIxNTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM0RkQxQzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCI+Um91dGVyPC90ZXh0Pgo8bGluZSB4MT0iMjU2IiB5MT0iMTg0IiB4Mj0iMTMwIiB5Mj0iMjkwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSB4MT0iMjU2IiB5MT0iMTg0IiB4Mj0iMjU2IiB5Mj0iMjkwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSB4MT0iMjU2IiB5MT0iMTg0IiB4Mj0iMzgyIiB5Mj0iMjkwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSB4MT0iMTMwIiB5MT0iMjkwIiB4Mj0iMTMwIiB5Mj0iMzYwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8ZyBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM5QUE1QjgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPgo8cmVjdCB4PSI5NCIgeT0iMjkwIiB3aWR0aD0iNzIiIGhlaWdodD0iNTAiIHJ4PSI4IiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIxMzAiIHk9IjMyMCI+UG9ydMOhdGlsPC90ZXh0Pgo8cmVjdCB4PSIyMjAiIHk9IjI5MCIgd2lkdGg9IjcyIiBoZWlnaHQ9IjUwIiByeD0iOCIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iMjU2IiB5PSIzMjAiPk3Ds3ZpbDwvdGV4dD4KPHJlY3QgeD0iMzQ2IiB5PSIyOTAiIHdpZHRoPSI3MiIgaGVpZ2h0PSI1MCIgcng9IjgiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iI0YyQTY1QSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjM4MiIgeT0iMzE2IiBmaWxsPSIjRjJBNjVBIj5TbWFydCBUVjwvdGV4dD4KPHRleHQgeD0iMzgyIiB5PSIzMzAiIGZpbGw9IiNGMkE2NUEiPihjb25zdW1lIGFuY2hvPC90ZXh0Pgo8dGV4dCB4PSIzODIiIHk9IjM0MyIgZmlsbD0iI0YyQTY1QSI+ZGUgYmFuZGEpPC90ZXh0Pgo8cmVjdCB4PSI5NCIgeT0iMzYwIiB3aWR0aD0iNzIiIGhlaWdodD0iNTAiIHJ4PSI4IiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIxMzAiIHk9IjM5MCI+SW1wcmVzb3JhPC90ZXh0Pgo8L2c+Cjwvc3ZnPg==" width="512" height="512" loading="lazy" alt="Topología de una red doméstica con el router en el centro y varios dispositivos conectados, uno de ellos consumiendo mucho ancho de banda">
+<figcaption>Así se reparte el ancho de banda entre los dispositivos de una red doméstica.</figcaption>
+</figure>
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Comando</th><th>Qué revisa</th><th>Cuándo usarlo</th></tr>
+</thead>
+<tbody>
+<tr><td><code>ipconfig</code></td><td>Configuración IP local</td><td>Al empezar cualquier diagnóstico</td></tr>
+<tr><td><code>ping</code></td><td>Conectividad y latencia</td><td>Cortes o lentitud puntual</td></tr>
+<tr><td><code>tracert</code></td><td>Ruta hasta el destino</td><td>Saber en qué punto se frena la red</td></tr>
+<tr><td><code>pathping</code></td><td>Pérdida de paquetes por salto</td><td>Problemas intermitentes</td></tr>
+<tr><td><code>nslookup</code></td><td>Resolución de dominios</td><td>Páginas que no cargan por nombre</td></tr>
+<tr><td><code>netstat</code></td><td>Conexiones activas</td><td>Detectar consumo de red inesperado</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Combinar estos comandos en orden —<code>ipconfig</code>, <code>ping</code>, <code>tracert</code> y <code>nslookup</code>— resuelve la mayoría de los problemas de latencia sin necesidad de software adicional ni de llamar al soporte técnico.</p>
+</div>
+</article>
+
+<!-- ============ ARTÍCULO SECUNDARIO 2: SCRIPTING ============ -->
+<span class="category-anchor" id="programacion-y-scripting"></span>
+<article class="post" id="automatizacion-python-powershell">
+<div class="wrap post-body">
+<span class="category-tag">Programación y Scripting</span>
+<h2 style="border:none; margin-top:0; padding-top:0; font-size:1.8rem;">Automatización de tareas repetitivas con scripts en Python y PowerShell</h2>
+
+<p>Antes de recurrir a una plataforma de automatización, muchas tareas repetitivas en un ordenador se resuelven con un script corto. Python destaca por su ecosistema de librerías; PowerShell, por estar integrado en Windows y tener acceso directo al sistema. Estos son cuatro automatizaciones reales que puedes adaptar en minutos.</p>
+
+<h3>1. Python: organizar archivos de una carpeta por tipo</h3>
+<p>Un clásico para limpiar la carpeta de Descargas automáticamente, moviendo cada archivo a una subcarpeta según su extensión.</p>
+<pre><code>import os, shutil
+
+carpeta = os.path.expanduser("~/Downloads")
+
+for archivo in os.listdir(carpeta):
+ruta = os.path.join(carpeta, archivo)
+if os.path.isfile(ruta):
+extension = archivo.split(".")[-1].lower()
+destino = os.path.join(carpeta, extension)
+os.makedirs(destino, exist_ok=True)
+shutil.move(ruta, os.path.join(destino, archivo))
+
+print("Carpeta organizada.")</code></pre>
+
+<h3>2. Python: renombrado masivo con la librería schedule</h3>
+<p>Para tareas que deben repetirse a una hora fija sin depender del Programador de tareas de Windows, la librería <code>schedule</code> permite dejar un script corriendo en segundo plano.</p>
+<pre><code>import schedule
+import time
+
+def tarea_diaria():
+print("Ejecutando backup de la carpeta de proyectos...")
+# aquí iría la lógica real, por ejemplo una copia con shutil
+
+schedule.every().day.at("09:00").do(tarea_diaria)
+
+while True:
+schedule.run_pending()
+time.sleep(60)</code></pre>
+
+<h3>3. PowerShell: renombrar archivos en lote</h3>
+<p>PowerShell es especialmente rápido para operaciones masivas sobre archivos sin instalar nada adicional. Este ejemplo añade la fecha actual al nombre de todos los archivos <code>.jpg</code> de una carpeta.</p>
+<pre><code>Get-ChildItem -Path "C:\Fotos" -Filter *.jpg | ForEach-Object {
+$nuevoNombre = "{0}_{1}" -f (Get-Date -Format "yyyyMMdd"), $_.Name
+Rename-Item $_.FullName -NewName $nuevoNombre
+}</code></pre>
+
+<h3>4. PowerShell: programar una tarea automática del sistema</h3>
+<p>En lugar de dejar un script corriendo, PowerShell puede registrar directamente una tarea en el Programador de tareas de Windows para que se ejecute sola, incluso si cierras sesión.</p>
+<pre><code>$accion = New-ScheduledTaskAction -Execute "powershell.exe" `
+-Argument "-File C:\Scripts\backup.ps1"
+$disparador = New-ScheduledTaskTrigger -Daily -At 9am
+
+Register-ScheduledTask -Action $accion -Trigger $disparador `
+-TaskName "BackupDiario" -Description "Copia de seguridad automática"</code></pre>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHJlY3QgeD0iNzAiIHk9IjExMCIgd2lkdGg9IjM3MiIgaGVpZ2h0PSIyOTIiIHJ4PSIxMCIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHJlY3QgeD0iNzAiIHk9IjExMCIgd2lkdGg9IjM3MiIgaGVpZ2h0PSIzNCIgcng9IjEwIiBmaWxsPSIjMTgyMzM4Ii8+CjxjaXJjbGUgY3g9Ijk0IiBjeT0iMTI3IiByPSI2IiBmaWxsPSIjRjJBNjVBIi8+CjxjaXJjbGUgY3g9IjExNCIgY3k9IjEyNyIgcj0iNiIgZmlsbD0iIzRGRDFDNSIvPgo8Y2lyY2xlIGN4PSIxMzQiIGN5PSIxMjciIHI9IjYiIGZpbGw9IiM2OTczOEEiLz4KPGcgZm9udC1mYW1pbHk9IkpldEJyYWlucyBNb25vLCBtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNCN0UzREUiPgo8dGV4dCB4PSI5MCIgeT0iMTcyIj4kIHB5dGhvbiBvcmdhbml6YXIucHk8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIxOTYiIGZpbGw9IiM5QUE1QjgiPiMgbW92aWVuZG8gYXJjaGl2b3MgcG9yIHRpcG8uLi48L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIyMjAiIGZpbGw9IiM0RkQxQzUiPuKGkiAxNCBQREYgbW92aWRvczwvdGV4dD4KPHRleHQgeD0iOTAiIHk9IjI0NCIgZmlsbD0iIzRGRDFDNSI+4oaSIDggaW3DoWdlbmVzIG1vdmlkYXM8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIyNjgiIGZpbGw9IiNGMkE2NUEiPuKGkiAyIGFyY2hpdm9zIGR1cGxpY2Fkb3M8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIyOTIiIGZpbGw9IiM5QUE1QjgiPiMgdGFyZWEgcHJvZ3JhbWFkYTogMDk6MDAgZGlhcmlvPC90ZXh0Pgo8dGV4dCB4PSI5MCIgeT0iMzE2IiBmaWxsPSIjQjdFM0RFIj4kIGNyb250YWIgLWw8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIzNDAiIGZpbGw9IiM5QUE1QjgiPjAgOSAqICogKiBweXRob24zIG9yZ2FuaXphci5weTwvdGV4dD4KPHRleHQgeD0iOTAiIHk9IjM3MCIgZmlsbD0iIzRGRDFDNSI+TGlzdG8g4pyTPC90ZXh0Pgo8L2c+Cjwvc3ZnPg==" width="512" height="512" loading="lazy" alt="Terminal mostrando la ejecución de un script de Python que organiza archivos automáticamente y una tarea programada con crontab">
+<figcaption>Salida de un script de organización de archivos ejecutado desde la terminal.</figcaption>
+</figure>
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Necesidad</th><th>Mejor opción</th><th>Por qué</th></tr>
+</thead>
+<tbody>
+<tr><td>Procesar datos, texto o archivos con lógica compleja</td><td>Python</td><td>Librerías especializadas y sintaxis clara</td></tr>
+<tr><td>Interactuar con el sistema operativo Windows</td><td>PowerShell</td><td>Acceso nativo a servicios y el registro</td></tr>
+<tr><td>Automatización que debe sobrevivir a un reinicio</td><td>PowerShell + Programador de tareas</td><td>No depende de mantener un proceso abierto</td></tr>
+<tr><td>Prototipar rápido una idea de automatización</td><td>Python</td><td>Instalación de librerías inmediata con pip</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>No hace falta elegir uno solo: es habitual usar PowerShell para programar la ejecución y Python para la lógica pesada, llamando al script de Python desde una tarea de PowerShell.</p>
+</div>
+</article>
+
+
+<!-- ============ ARTÍCULO NUEVO: REDES (WI-FI DOMÉSTICO) ============ -->
+<article class="post" id="optimizar-wifi-domestico">
+<div class="wrap post-body">
+<span class="category-tag">Redes y Sistemas</span>
+<h2 style="border:none; margin-top:0; padding-top:0; font-size:1.8rem;">Cómo diagnosticar y optimizar el Wi-Fi de tu casa paso a paso</h2>
+
+<p>Antes de culpar a tu proveedor de internet, vale la pena revisar lo que ocurre dentro de las cuatro paredes de tu casa. La mayoría de los problemas de Wi-Fi —zonas muertas, cortes al cambiar de habitación, velocidad que se desploma por la noche— tienen un origen local: interferencias, mala ubicación del router o demasiados dispositivos compitiendo por la misma banda de frecuencia.</p>
+
+<p>Esta guía recorre el proceso completo: medir lo que realmente tienes, entender por qué falla y aplicar los ajustes que marcan más diferencia, de menor a mayor esfuerzo.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHJlY3QgeD0iMTc2IiB5PSIyMzAiIHdpZHRoPSIxNjAiIGhlaWdodD0iNDYiIHJ4PSI4IiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyNTMiIHI9IjYiIGZpbGw9IiM0RkQxQzUiLz4KPGNpcmNsZSBjeD0iMjIyIiBjeT0iMjUzIiByPSI2IiBmaWxsPSIjRjJBNjVBIi8+CjxsaW5lIHgxPSIxNzYiIHkxPSIyMzAiIHgyPSIxNTAiIHkyPSIxODAiIHN0cm9rZT0iIzBGMTQyMCIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGxpbmUgeDE9IjE3NiIgeTE9IjIzMCIgeDI9IjE1MCIgeTI9IjE4MCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8bGluZSB4MT0iMzM2IiB5MT0iMjMwIiB4Mj0iMzYyIiB5Mj0iMTgwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0yNTYgMTkwIGE3MCA3MCAwIDAgMSA3MCA3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44NSIvPgo8cGF0aCBkPSJNMjU2IDE2NSBhOTUgOTUgMCAwIDEgOTUgOTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRGRDFDNSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNTUiLz4KPHBhdGggZD0iTTI1NiAxNDAgYTEyMCAxMjAgMCAwIDEgMTIwIDEyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC4zIi8+CjxwYXRoIGQ9Ik0yNTYgMTkwIGE3MCA3MCAwIDAgMCAtNzAgNzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRGRDFDNSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuODUiLz4KPHBhdGggZD0iTTI1NiAxNjUgYTk1IDk1IDAgMCAwIC05NSA5NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41NSIvPgo8cGF0aCBkPSJNMjU2IDE0MCBhMTIwIDEyMCAwIDAgMCAtMTIwIDEyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC4zIi8+CjxyZWN0IHg9Ijk2IiB5PSIzNjAiIHdpZHRoPSI3MCIgaGVpZ2h0PSI3MCIgcng9IjEwIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIxMzEiIHk9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzlBQTVCOCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIj4yLjQgR0h6PC90ZXh0Pgo8cmVjdCB4PSIyMjEiIHk9IjM2MCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiByeD0iMTAiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iI0YyQTY1QSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjI1NiIgeT0iNDAwIiB0ZXh0LWFuYGhvcj0ibWlkZGxlIiBmaWxsPSIjRjJBNjVBIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPjUgR0h6PC90ZXh0Pgo8cmVjdCB4PSIzNDYiIHk9IjM2MCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiByeD0iMTAiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjM4MSIgeT0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUFBNUI4IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiPjYgR0h6PC90ZXh0Pgo8L3N2Zz4=" width="512" height="512" loading="lazy" alt="Router doméstico emitiendo señal Wi-Fi en las bandas de 2,4 GHz, 5 GHz y 6 GHz">
+<figcaption>Un mismo router puede emitir en varias bandas: cada una tiene un uso distinto.</figcaption>
+</figure>
+
+
+<h3>1. Entiende las bandas antes de tocar nada</h3>
+<p>Los routers modernos emiten en al menos dos bandas simultáneas, y muchos ya incluyen una tercera:</p>
+<ul>
+<li><strong>2,4 GHz:</strong> mayor alcance y mejor penetración de paredes, pero más lenta y más saturada (compite con microondas, Bluetooth y routers vecinos).</li>
+<li><strong>5 GHz:</strong> mucha más velocidad, pero menor alcance y peor comportamiento a través de muros gruesos.</li>
+<li><strong>6 GHz (Wi-Fi 6E/7):</strong> canal casi libre de interferencias, ideal para streaming y videojuegos, pero con el alcance más corto de las tres.</li>
+</ul>
+<p>La recomendación general: dispositivos fijos y cercanos al router (PC, consola, TV) en 5 GHz o 6 GHz; dispositivos que se mueven por la casa o están lejos (móviles, sensores, bombillas inteligentes) en 2,4 GHz.</p>
+
+<h3>2. Mide la señal real en cada habitación</h3>
+<p>No sirve de nada optimizar a ciegas. En Windows puedes ver las redes cercanas y su intensidad con:</p>
+<pre><code>netsh wlan show networks mode=bssid</code></pre>
+<p>Para un diagnóstico más completo del adaptador de red de tu equipo:</p>
+<pre><code>netsh wlan show interfaces</code></pre>
+<p>En móvil, apps como <strong>Wifi Analyzer</strong> (Android) o el propio panel de ajustes de iOS muestran la intensidad en dBm mientras caminas por la casa. Como referencia rápida: por encima de -50 dBm es excelente, entre -60 y -70 dBm es aceptable, y por debajo de -80 dBm ya notarás cortes.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGcgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSIjOUFBNUI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4KPHJlY3QgeD0iODAiIHk9IjMzMCIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjkwIiByeD0iNiIgZmlsbD0iIzRGRDFDNSIvPgo8dGV4dCB4PSIxMDMiIHk9IjQ0MCIgPlNhbMOzbjwvdGV4dD4KPHJlY3QgeD0iMTYwIiB5PSIyNzAiIHdpZHRoPSI0NiIgaGVpZ2h0PSIxNTAiIHJ4PSI2IiBmaWxsPSIjNEZEMUM1Ii8+Cjx0ZXh0IHg9IjE4MyIgeT0iNDQwIj5Fc3R1ZGlvPC90ZXh0Pgo8cmVjdCB4PSIyNDAiIHk9IjM2MCIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjYwIiByeD0iNiIgZmlsbD0iI0YyQTY1QSIvPgo8dGV4dCB4PSIyNjMiIHk9IjQ0MCI+Q29jaW5hPC90ZXh0Pgo8cmVjdCB4PSIzMjAiIHk9IjM5MCIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjMwIiByeD0iNiIgZmlsbD0iI0YyQTY1QSIvPgo8dGV4dCB4PSIzNDMiIHk9IjQ0MCI+RG9ybS4gMjwvdGV4dD4KPHJlY3QgeD0iNDAwIiB5PSIyMzAiIHdpZHRoPSI0NiIgaGVpZ2h0PSIxOTAiIHJ4PSI2IiBmaWxsPSIjNEZEMUM1Ii8+Cjx0ZXh0IHg9IjQyMyIgeT0iNDQwIj5Sb3V0ZXI8L3RleHQ+CjwvZz4KPGxpbmUgeDE9IjcwIiB5MT0iNDIwIiB4Mj0iNDUwIiB5Mj0iNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIyNTYiIHk9IjEwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0U4RUNGNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iNzAwIj5JbnRlbnNpZGFkIGRlIHNlw7FhbCBwb3IgaGFiaXRhY2nDs248L3RleHQ+Cjwvc3ZnPg==" width="512" height="512" loading="lazy" alt="Gráfico de barras comparando la intensidad de la señal Wi-Fi en distintas habitaciones de una casa, con el router como punto más fuerte">
+<figcaption>Anota la intensidad de señal en cada estancia antes de mover nada; te dirá dónde está realmente el problema.</figcaption>
+</figure>
+
+
+<h3>3. Cambia el canal si vives en un edificio con muchas redes</h3>
+<p>En zonas con muchos vecinos, decenas de routers compiten por los mismos canales de 2,4 GHz, generando interferencia igual que si todos hablaran a la vez en la misma sala. Los canales 1, 6 y 11 no se solapan entre sí, así que son los más recomendables. La mayoría de routers ofrecen selección automática de canal, pero forzar manualmente uno de esos tres suele dar mejores resultados en entornos saturados.</p>
+
+<h3>4. Coloca el router donde realmente importa</h3>
+<p>La ubicación física sigue siendo el factor con más impacto y el que menos cuesta corregir:</p>
+<ul>
+<li>Punto central de la casa, no en una esquina ni escondido en un mueble cerrado.</li>
+<li>Elevado, a la altura de un mueble o estantería, nunca en el suelo.</li>
+<li>Lejos de microondas, teléfonos inalámbricos antiguos y de otros aparatos electrónicos grandes.</li>
+<li>Con las antenas en distintos ángulos (una vertical, otra a 45°) si el router las tiene externas.</li>
+</ul>
+
+<h3>5. Añade cobertura solo si de verdad la necesitas</h3>
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Solución</th><th>Cuándo usarla</th><th>Ventaja principal</th><th>Inconveniente</th></tr>
+</thead>
+<tbody>
+<tr><td>Repetidor Wi-Fi</td><td>Una zona muerta puntual</td><td class="free">Barato y fácil de instalar</td><td>Suele reducir la velocidad a la mitad</td></tr>
+<tr><td>Sistema mesh</td><td>Casas grandes o varias plantas</td><td class="free">Una sola red, sin cortes al moverte</td><td>Coste más alto que un repetidor</td></tr>
+<tr><td>PLC (por la red eléctrica)</td><td>Paredes muy gruesas o de hormigón</td><td class="free">No depende de la señal Wi-Fi</td><td>Rendimiento variable según la instalación eléctrica</td></tr>
+<tr><td>Cable Ethernet</td><td>Dispositivos fijos (PC, consola, TV)</td><td class="free">Máxima estabilidad y velocidad</td><td>Requiere tender cable</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Checklist rápido de diagnóstico</h3>
+<ol class="workflow">
+<li><strong>Mide primero.</strong> Anota la intensidad de señal en cada habitación antes de cambiar nada, para poder comparar después.</li>
+<li><strong>Revisa el canal.</strong> En 2,4 GHz, fuerza el canal 1, 6 u 11 si detectas muchas redes vecinas.</li>
+<li><strong>Reubica el router.</strong> Muévelo al punto más central y elevado posible de la vivienda.</li>
+<li><strong>Separa las bandas por uso.</strong> Dispositivos fijos a 5 GHz o 6 GHz; dispositivos móviles o de bajo consumo a 2,4 GHz.</li>
+<li><strong>Actualiza el firmware.</strong> Muchos routers corrigen fallos de estabilidad solo con una actualización pendiente.</li>
+<li><strong>Añade cobertura si hace falta.</strong> Solo tras los pasos anteriores, valora un sistema mesh o cable Ethernet para lo que sí puede ir cableado.</li>
+</ol>
+
+<p>La mayoría de las quejas de "internet lento" se resuelven con los tres primeros pasos: medir, elegir el canal correcto y mover el router. El resto son ajustes finos que merece la pena aplicar solo cuando el problema persiste.</p>
+</div>
+</article>
+
+
+<!-- ============ ARTÍCULO NUEVO: SCRIPTING (GIT + TAREAS PROGRAMADAS) ============ -->
+<article class="post" id="git-cron-tareas-programadas">
+<div class="wrap post-body">
+<span class="category-tag">Programación y Scripting</span>
+<h2 style="border:none; margin-top:0; padding-top:0; font-size:1.8rem;">Git para no perder tu trabajo y tareas programadas para automatizarlo</h2>
+
+<p>Dos habilidades separan a quien escribe scripts sueltos de quien construye automatizaciones fiables: llevar un control de versiones decente con <strong>Git</strong>, y saber programar la ejecución automática con <strong>cron</strong> (Linux/macOS) o el <strong>Programador de tareas</strong> (Windows). Esta guía cubre ambas con ejemplos que puedes reutilizar hoy mismo.</p>
+
+<h2 id="git-basico">1. Git: el mínimo indispensable para no perder cambios</h2>
+
+<p>No hace falta dominar Git a fondo para beneficiarte de él. Con un flujo de ramas simple ya evitas el clásico "script_final_v3_definitivo.py".</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGxpbmUgeDE9IjEyMCIgeTE9IjEyMCIgeDI9IjEyMCIgeTI9IjQyMCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjMiLz4KPGxpbmUgeDE9IjIzMCIgeTE9IjIyMCIgeDI9IjIzMCIgeTI9IjM0MCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjMiLz4KPHBhdGggZD0iTTEyMCAyMjAgQyAxNzAgMjIwLCAxODAgMjIwLCAyMzAgMjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMyIvPgo8cGF0aCBkPSJNMjMwIDM0MCBDIDE4MCAzNDAsIDE3MCAzNDAsIDEyMCAzNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxnPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxNTAiIHI9IjEyIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIyMjAiIHI9IjEyIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIzNDAiIHI9IjEyIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSI0MDAiIHI9IjEyIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIvPgo8Y2lyY2xlIGN4PSIyMzAiIGN5PSIyMjAiIHI9IjEyIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMyIvPgo8Y2lyY2xlIGN4PSIyMzAiIGN5PSIyODAiIHI9IjEyIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMyIvPgo8Y2lyY2xlIGN4PSIyMzAiIGN5PSIzNDAiIHI9IjEyIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMyIvPgo8bGluZSB4MT0iMTIwIiB5MT0iMTUwIiB4Mj0iMTIwIiB5Mj0iMjIwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIvPgo8bGluZSB4MT0iMTIwIiB5MT0iMzQwIiB4Mj0iMTIwIiB5Mj0iNDAwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIvPgo8bGluZSB4MT0iMjMwIiB5MT0iMjIwIiB4Mj0iMjMwIiB5Mj0iMjgwIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMyIvPgo8bGluZSB4MT0iMjMwIiB5MT0iMjgwIiB4Mj0iMjMwIiB5Mj0iMzQwIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMyIvPgo8L2c+CjxnIGZvbnQtZmFtaWx5PSJKZXRCcmFpbnMgTW9ubywgbW9ub3NwYWNlIiBmb250LXNpemU9IjEyIj4KPHRleHQgeD0iOTAiIHk9IjEzMCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzlBQTVCOCI+bWFpbjwvdGV4dD4KPHRleHQgeD0iOTAiIHk9IjQwNCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzlBQTVCOCI+bWFpbjwvdGV4dD4KPHRleHQgeD0iMjYwIiB5PSIyNTUiIGZpbGw9IiNGMkE2NUEiPmZlYXR1cmUvbG9naW48L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIzNDUiIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiM0RkQxQzUiPm1lcmdlPC90ZXh0Pgo8L2c+Cjwvc3ZnPg==" width="512" height="512" loading="lazy" alt="Diagrama de ramas de Git mostrando la rama principal main y una rama secundaria feature/login que se fusiona de vuelta">
+<figcaption>Una rama por funcionalidad, fusionada de vuelta a main cuando está lista.</figcaption>
+</figure>
+
+
+<pre><code># Iniciar un repositorio en una carpeta existente
+git init
+
+# Crear una rama para probar algo sin tocar la versión estable
+git checkout -b feature/nueva-automatizacion
+
+# Guardar el progreso con mensajes claros
+git add .
+git commit -m "Añade clasificación de correos por urgencia"
+
+# Volver a la rama principal y fusionar cuando esté probado
+git checkout main
+git merge feature/nueva-automatizacion</code></pre>
+
+<p>Para deshacer un cambio reciente sin perder el historial (mucho más seguro que borrar archivos a mano):</p>
+<pre><code># Descartar cambios no guardados en un archivo
+git checkout -- script.py
+
+# Volver un commit atrás manteniendo el historial
+git revert HEAD
+
+# Ver qué cambió exactamente en cada commit
+git log --oneline --graph</code></pre>
+
+<h3>Un .gitignore que te ahorra dolores de cabeza</h3>
+<p>Antes del primer commit, evita subir archivos temporales, credenciales o entornos virtuales:</p>
+<pre><code># .gitignore para proyectos de automatización en Python
+__pycache__/
+*.pyc
+.env
+venv/
+*.log
+.DS_Store</code></pre>
+
+<h2 id="cron-linux">2. cron en Linux y macOS: programar scripts sin dejar nada abierto</h2>
+
+<p>A diferencia de un bucle <code>while True</code> con <code>time.sleep()</code>, una tarea de <strong>cron</strong> se ejecuta aunque no tengas ninguna terminal ni proceso abierto: el sistema operativo se encarga de lanzarla en el momento exacto.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjMwIiByPSIxMjAiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxjaXJjbGUgY3g9IjI1NiIgY3k9IjIzMCIgcj0iMTIwIiBmaWxsPSJub25lIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iNiAxMCIvPgo8bGluZSB4MT0iMjU2IiB5MT0iMjMwIiB4Mj0iMjU2IiB5Mj0iMTQwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxsaW5lIHgxPSIyNTYiIHkxPSIyMzAiIHgyPSIzMjAiIHkyPSIyNTUiIHN0cm9rZT0iI0YyQTY1QSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjMwIiByPSI4IiBmaWxsPSIjRThFQ0Y0Ii8+CjxnIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzlBQTVCOCI+Cjx0ZXh0IHg9IjI1NiIgeT0iMTIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4wMDwvdGV4dD4KPHRleHQgeD0iMzY2IiB5PSIyMzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE1PC90ZXh0Pgo8dGV4dCB4PSIyNTYiIHk9IjM2MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MzA8L3RleHQ+Cjx0ZXh0IHg9IjE0NiIgeT0iMjM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj40NTwvdGV4dD4KPC9nPgo8cmVjdCB4PSIxNTAiIHk9IjM5MiIgd2lkdGg9IjIxMiIgaGVpZ2h0PSI0MCIgcng9IjgiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjI1NiIgeT0iNDE3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNEZEMUM1IiBmb250LWZhbWlseT0iSmV0QnJhaW5zIE1vbm8sIG1vbm9zcGFjZSIgZm9udC1zaXplPSIxMyI+MCA5ICogKiAxLTU8L3RleHQ+Cjwvc3ZnPg==" width="512" height="512" loading="lazy" alt="Reloj representando una expresión cron con los minutos, horas y días marcados, y la sintaxis 0 9 * * 1-5 debajo">
+<figcaption>La sintaxis de cron define minuto, hora, día del mes, mes y día de la semana, en ese orden.</figcaption>
+</figure>
+
+
+<pre><code># Editar las tareas programadas del usuario actual
+crontab -e
+
+# Formato: minuto hora día-mes mes día-semana comando
+# Ejecutar un script cada día laborable a las 9:00
+0 9 * * 1-5 /usr/bin/python3 /home/usuario/scripts/resumen_diario.py
+
+# Ejecutar cada 30 minutos
+*/30 * * * * /home/usuario/scripts/backup_incremental.sh
+
+# Ver las tareas programadas actuales
+crontab -l</code></pre>
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Expresión cron</th><th>Frecuencia</th></tr>
+</thead>
+<tbody>
+<tr><td><code>0 * * * *</code></td><td>Cada hora, en punto</td></tr>
+<tr><td><code>0 9 * * *</code></td><td>Todos los días a las 9:00</td></tr>
+<tr><td><code>0 9 * * 1-5</code></td><td>De lunes a viernes a las 9:00</td></tr>
+<tr><td><code>*/15 * * * *</code></td><td>Cada 15 minutos</td></tr>
+<tr><td><code>0 0 1 * *</code></td><td>El día 1 de cada mes a medianoche</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Un problema habitual con cron es que el script funciona a mano pero falla al programarlo, casi siempre porque el entorno de cron no carga las mismas variables que tu terminal. La solución más fiable es usar siempre rutas absolutas y, si el script depende de un entorno virtual de Python, activarlo explícitamente dentro del propio script o del comando:</p>
+<pre><code>0 9 * * 1-5 /home/usuario/proyectos/venv/bin/python3 /home/usuario/proyectos/resumen.py >> /home/usuario/logs/resumen.log 2>&1</code></pre>
+<p>Redirigir la salida a un archivo de log con <code>>> archivo.log 2>&1</code> es casi obligatorio: sin terminal visible, es la única forma de saber si algo falló.</p>
+
+<h2 id="programador-windows">3. El equivalente en Windows: PowerShell + Programador de tareas</h2>
+<p>Ya vimos en el artículo anterior cómo registrar una tarea con <code>Register-ScheduledTask</code>. Para revisar o depurar tareas ya creadas, estos comandos son los más útiles:</p>
+<pre><code># Listar todas las tareas programadas
+Get-ScheduledTask
+
+# Ver el historial de ejecuciones de una tarea concreta
+Get-ScheduledTaskInfo -TaskName "BackupDiario"
+
+# Ejecutar una tarea manualmente para probarla
+Start-ScheduledTask -TaskName "BackupDiario"
+
+# Eliminar una tarea que ya no necesitas
+Unregister-ScheduledTask -TaskName "BackupDiario" -Confirm:$false</code></pre>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHJlY3QgeD0iNzAiIHk9IjExMCIgd2lkdGg9IjM3MiIgaGVpZ2h0PSIyOTIiIHJ4PSIxMCIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHJlY3QgeD0iNzAiIHk9IjExMCIgd2lkdGg9IjM3MiIgaGVpZ2h0PSIzNCIgcng9IjEwIiBmaWxsPSIjMTgyMzM4Ii8+CjxjaXJjbGUgY3g9Ijk0IiBjeT0iMTI3IiByPSI2IiBmaWxsPSIjRjJBNjVBIi8+CjxjaXJjbGUgY3g9IjExNCIgY3k9IjEyNyIgcj0iNiIgZmlsbD0iIzRGRDFDNSIvPgo8Y2lyY2xlIGN4PSIxMzQiIGN5PSIxMjciIHI9IjYiIGZpbGw9IiM2OTczOEEiLz4KPGcgZm9udC1mYW1pbHk9IkpldEJyYWlucyBNb25vLCBtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNCN0UzREUiPgo8dGV4dCB4PSI5MCIgeT0iMTcyIj4kIHB5dGhvbiBvcmdhbml6YXIucHk8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIxOTYiIGZpbGw9IiM5QUE1QjgiPiMgbW92aWVuZG8gYXJjaGl2b3MgcG9yIHRpcG8uLi48L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIyMjAiIGZpbGw9IiM0RkQxQzUiPuKGkiAxNCBQREYgbW92aWRvczwvdGV4dD4KPHRleHQgeD0iOTAiIHk9IjI0NCIgZmlsbD0iIzRGRDFDNSI+4oaSIDggaW3DoWdlbmVzIG1vdmlkYXM8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIyNjgiIGZpbGw9IiNGMkE2NUEiPuKGkiAyIGFyY2hpdm9zIGR1cGxpY2Fkb3M8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIyOTIiIGZpbGw9IiM5QUE1QjgiPiMgdGFyZWEgcHJvZ3JhbWFkYTogMDk6MDAgZGlhcmlvPC90ZXh0Pgo8dGV4dCB4PSI5MCIgeT0iMzE2IiBmaWxsPSIjQjdFM0RFIj4kIGNyb250YWIgLWw8L3RleHQ+Cjx0ZXh0IHg9IjkwIiB5PSIzNDAiIGZpbGw9IiM5QUE1QjgiPjAgOSAqICogKiBweXRob24zIG9yZ2FuaXphci5weTwvdGV4dD4KPHRleHQgeD0iOTAiIHk9IjM3MCIgZmlsbD0iIzRGRDFDNSI+TGlzdG8g4pyTPC90ZXh0Pgo8L2c+Cjwvc3ZnPg==" width="512" height="512" loading="lazy" alt="Terminal mostrando la salida de un script de organización de archivos en Python junto con la lista de tareas programadas con crontab">
+<figcaption>Registrar la salida de cada ejecución es la única forma de depurar una tarea programada sin supervisión.</figcaption>
+</figure>
+
+
+<h3>Flujo recomendado para cualquier automatización nueva</h3>
+<ol class="workflow">
+<li><strong>Versiona el script desde el primer día.</strong> Un repositorio Git, aunque sea local y sin remoto, te permite volver atrás si algo se rompe.</li>
+<li><strong>Pruébalo a mano varias veces.</strong> Ejecuta el script directamente desde la terminal antes de programarlo, con datos reales.</li>
+<li><strong>Añade registro (logging).</strong> Que el script escriba qué hizo, no solo que lo haga; sin esto, depurar tareas programadas es casi imposible.</li>
+<li><strong>Prográmalo con la frecuencia mínima necesaria.</strong> Empieza espaciado (diario, no cada minuto) y ajusta según resultados.</li>
+<li><strong>Revisa el log la primera semana.</strong> Confirma que se ejecuta cuando toca antes de olvidarte de ella por completo.</li>
+</ol>
+
+<p>Combinar control de versiones con tareas programadas convierte un script que "funciona en tu equipo" en una automatización que sigue funcionando semanas después, incluso si no te acuerdas de cómo la escribiste.</p>
+</div>
+</article>
+
+
+<!-- ============ ARTÍCULO NUEVO: HERRAMIENTAS Y PRODUCTIVIDAD ============ -->
+<span class="category-anchor" id="herramientas-y-productividad"></span>
+<article class="post" id="herramientas-productividad-trabajo-diario">
+<div class="wrap post-body">
+<span class="category-tag">Herramientas y Productividad</span>
+<h2 style="border:none; margin-top:0; padding-top:0; font-size:1.8rem;">Las mejores herramientas y métodos para organizar tu trabajo diario</h2>
+
+<p>Tener muchas aplicaciones instaladas no es lo mismo que ser productivo; a menudo es justo lo contrario. Esta guía no es una lista interminable de apps, sino un sistema mínimo con cuatro piezas —notas, tareas, tiempo y contraseñas— más los métodos concretos que hacen que cada pieza funcione de verdad, no solo que exista.</p>
+
+<h2 id="segundo-cerebro">1. Un "segundo cerebro" para no depender de tu memoria</h2>
+
+<p>La idea central de sistemas como <strong>PARA</strong> (Proyectos, Áreas, Recursos, Archivo) o el método <strong>Zettelkasten</strong> es simple: en lugar de intentar recordarlo todo, construyes un lugar externo y buscable donde vive la información, conectada entre sí en vez de amontonada en carpetas sueltas.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGcgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiPgo8bGluZSB4MT0iMjU2IiB5MT0iMjMwIiB4Mj0iMTUwIiB5Mj0iMTUwIi8+CjxsaW5lIHgxPSIyNTYiIHkxPSIyMzAiIHgyPSIzNjAiIHkyPSIxNTAiLz4KPGxpbmUgeDE9IjI1NiIgeTE9IjIzMCIgeDI9IjE1MCIgeTI9IjMyMCIvPgo8bGluZSB4MT0iMjU2IiB5MT0iMjMwIiB4Mj0iMzYwIiB5Mj0iMzIwIi8+CjxsaW5lIHgxPSIyNTYiIHkxPSIyMzAiIHgyPSIyNTYiIHkyPSIzODAiLz4KPGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE1MCIgeTI9IjMyMCIgc3Ryb2tlLWRhc2hhcnJheT0iMyA0Ii8+CjwvZz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjMwIiByPSIzMCIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjMiLz4KPHRleHQgeD0iMjU2IiB5PSIyMzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM0RkQxQzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjcwMCI+UHJveWVjdG88L3RleHQ+CjxnIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzlBQTVCOCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMjAiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTU0Ij5Ob3RhczwvdGV4dD4KPGNpcmNsZSBjeD0iMzYwIiBjeT0iMTUwIiByPSIyMCIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iMzYwIiB5PSIxNTQiPklkZWFzPC90ZXh0Pgo8Y2lyY2xlIGN4PSIxNTAiIGN5PSIzMjAiIHI9IjIwIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIxNTAiIHk9IjMyNCIgZmlsbD0iI0YyQTY1QSI+VGFyZWFzPC90ZXh0Pgo8Y2lyY2xlIGN4PSIzNjAiIGN5PSIzMjAiIHI9IjIwIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIzNjAiIHk9IjMyNCI+UmV1bmlvbmVzPC90ZXh0Pgo8Y2lyY2xlIGN4PSIyNTYiIGN5PSIzODAiIHI9IjIwIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiMyNjMwNEEiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIyNTYiIHk9IjM4NCI+UmVjdXJzb3M8L3RleHQ+CjwvZz4KPC9zdmc+" width="512" height="512" loading="lazy" alt="Red de notas conectadas alrededor de un nodo central de proyecto, con enlaces a notas, ideas, tareas, reuniones y recursos">
+<figcaption>Notas conectadas entre sí, en vez de carpetas aisladas: así se estructura un segundo cerebro.</figcaption>
+</figure>
+
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Herramienta</th><th>Punto fuerte</th><th>Plan gratuito</th><th>Ideal para</th></tr>
+</thead>
+<tbody>
+<tr><td>Notion</td><td>Bases de datos y plantillas flexibles</td><td class="free">Uso personal ilimitado</td><td>Organizar proyectos y documentación</td></tr>
+<tr><td>Obsidian</td><td>Notas en Markdown enlazadas entre sí</td><td class="free">Completo para uso personal</td><td>Quien prefiere guardar archivos locales</td></tr>
+<tr><td>Google Keep</td><td>Notas rápidas sin fricción</td><td class="free">Ilimitado</td><td>Apuntes sueltos e ideas al vuelo</td></tr>
+<tr><td>Todoist</td><td>Gestión de tareas con lenguaje natural</td><td class="free">Hasta 5 proyectos activos</td><td>Listas de tareas simples y recurrentes</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Regla práctica:</strong> una nota que no vuelves a abrir en un mes es ruido, no conocimiento. Revisa tu sistema cada pocas semanas y archiva o borra lo que ya no aporta.</p>
+
+<h2 id="tablero-tareas">2. Un tablero visual para dejar de perder tareas</h2>
+
+<p>Un método <strong>Kanban</strong> simple —columnas de "Por hacer", "En curso" y "Hecho"— hace visible lo que de otro modo vive disperso entre correos, chats y notas mentales.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGcgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSIjOUFBNUI4Ij4KPHJlY3QgeD0iNzAiIHk9IjEyMCIgd2lkdGg9IjExMiIgaGVpZ2h0PSIzMDAiIHJ4PSIxMCIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iMTI2IiB5PSIxNDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNFOEVDRjQiIGZvbnQtd2VpZ2h0PSI3MDAiPlBvciBoYWNlcjwvdGV4dD4KPHJlY3QgeD0iODYiIHk9IjE2MCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjM0IiByeD0iNiIgZmlsbD0iIzE4MjMzOCIvPgo8cmVjdCB4PSI4NiIgeT0iMjA0IiB3aWR0aD0iODAiIGhlaWdodD0iMzQiIHJ4PSI2IiBmaWxsPSIjMTgyMzM4Ii8+CjxyZWN0IHg9Ijg2IiB5PSIyNDgiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzNCIgcng9IjYiIGZpbGw9IiMxODIzMzgiLz4KCjxyZWN0IHg9IjIwMCIgeT0iMTIwIiB3aWR0aD0iMTEyIiBoZWlnaHQ9IjMwMCIgcng9IjEwIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIyNTYiIHk9IjE0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzRGRDFDNSIgZm9udC13ZWlnaHQ9IjcwMCI+RW4gY3Vyc288L3RleHQ+CjxyZWN0IHg9IjIxNiIgeT0iMTYwIiB3aWR0aD0iODAiIGhlaWdodD0iMzQiIHJ4PSI2IiBmaWxsPSIjMTgyMzM4IiBzdHJva2U9IiM0RkQxQzUiIHN0cm9rZS13aWR0aD0iMSIvPgo8cmVjdCB4PSIyMTYiIHk9IjIwNCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjM0IiByeD0iNiIgZmlsbD0iIzE4MjMzOCIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjEiLz4KCjxyZWN0IHg9IjMzMCIgeT0iMTIwIiB3aWR0aD0iMTEyIiBoZWlnaHQ9IjMwMCIgcng9IjEwIiBmaWxsPSIjMEYxNDIwIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMiIvPgo8dGV4dCB4PSIzODYiIHk9IjE0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0YyQTY1QSIgZm9udC13ZWlnaHQ9IjcwMCI+SGVjaG88L3RleHQ+CjxyZWN0IHg9IjM0NiIgeT0iMTYwIiB3aWR0aD0iODAiIGhlaWdodD0iMzQiIHJ4PSI2IiBmaWxsPSIjMTgyMzM4IiBvcGFjaXR5PSIwLjciLz4KPHJlY3QgeD0iMzQ2IiB5PSIyMDQiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzNCIgcng9IjYiIGZpbGw9IiMxODIzMzgiIG9wYWNpdHk9IjAuNyIvPgo8cmVjdCB4PSIzNDYiIHk9IjI0OCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjM0IiByeD0iNiIgZmlsbD0iIzE4MjMzOCIgb3BhY2l0eT0iMC43Ii8+CjxyZWN0IHg9IjM0NiIgeT0iMjkyIiB3aWR0aD0iODAiIGhlaWdodD0iMzQiIHJ4PSI2IiBmaWxsPSIjMTgyMzM4IiBvcGFjaXR5PSIwLjciLz4KPC9nPgo8L3N2Zz4=" width="512" height="512" loading="lazy" alt="Tablero Kanban con tres columnas: Por hacer, En curso y Hecho, con tarjetas de tareas repartidas entre ellas">
+<figcaption>La regla no escrita del Kanban personal: nunca más de dos o tres tarjetas a la vez en 'En curso'.</figcaption>
+</figure>
+
+
+<p><strong>Caso práctico:</strong> limita tu columna "En curso" a dos o tres tareas como máximo (el llamado límite de WIP, "work in progress"). Es la diferencia entre avanzar de verdad en pocas cosas y tener veinte tareas empezadas a medias sin terminar ninguna.</p>
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Herramienta</th><th>Uso principal</th><th>Plan gratuito</th><th>Ideal para</th></tr>
+</thead>
+<tbody>
+<tr><td>Trello</td><td>Tableros Kanban simples</td><td class="free">Hasta 10 tableros por espacio</td><td>Proyectos personales y equipos pequeños</td></tr>
+<tr><td>Notion (vista tablero)</td><td>Kanban integrado con notas y bases de datos</td><td class="free">Uso personal ilimitado</td><td>Quien ya centraliza todo en Notion</td></tr>
+<tr><td>ClickUp</td><td>Tableros con automatizaciones incluidas</td><td class="free">Con límite de almacenamiento</td><td>Equipos que necesitan más estructura</td></tr>
+<tr><td>GitHub Projects</td><td>Kanban ligado directamente al código</td><td class="free">Ilimitado en repos públicos y privados</td><td>Desarrolladores gestionando su propio trabajo</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="bloqueo-tiempo">3. Bloqueo de tiempo (time blocking) en vez de listas infinitas</h2>
+
+<p>Una lista de tareas te dice qué hacer, pero no cuándo, y por eso todo tiende a acumularse. El <strong>time blocking</strong> resuelve esto asignando cada tarea importante a un hueco concreto del calendario, tratándola con la misma seriedad que una reunión.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHJlY3QgeD0iNzAiIHk9IjExMCIgd2lkdGg9IjM3MiIgaGVpZ2h0PSIzMDAiIHJ4PSIxMCIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGcgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjEiPgo8bGluZSB4MT0iNzAiIHkxPSIxNzAiIHgyPSI0NDIiIHkyPSIxNzAiLz4KPGxpbmUgeDE9IjcwIiB5MT0iMjMwIiB4Mj0iNDQyIiB5Mj0iMjMwIi8+CjxsaW5lIHgxPSI3MCIgeTE9IjI5MCIgeDI9IjQ0MiIgeTI9IjI5MCIvPgo8bGluZSB4MT0iNzAiIHkxPSIzNTAiIHgyPSI0NDIiIHkyPSIzNTAiLz4KPC9nPgo8ZyBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiM2OTczOEEiPgo8dGV4dCB4PSI4MCIgeT0iMTYzIj45OjAwPC90ZXh0Pgo8dGV4dCB4PSI4MCIgeT0iMjIzIj4xMTowMDwvdGV4dD4KPHRleHQgeD0iODAiIHk9IjI4MyI+MTM6MDA8L3RleHQ+Cjx0ZXh0IHg9IjgwIiB5PSIzNDMiPjE1OjAwPC90ZXh0Pgo8L2c+CjxyZWN0IHg9IjEzMCIgeT0iMTIwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjQ4IiByeD0iNiIgZmlsbD0iIzRGRDFDNSIgb3BhY2l0eT0iMC44NSIvPgo8dGV4dCB4PSIyMDAiIHk9IjE0OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBCMEYxOSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNzAwIj5UcmFiYWpvIHByb2Z1bmRvPC90ZXh0Pgo8cmVjdCB4PSIxMzAiIHk9IjE4MCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI0OCIgcng9IjYiIGZpbGw9IiMxODIzMzgiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMjA4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUFBNUI4IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiPlJldW5pb25lczwvdGV4dD4KPHJlY3QgeD0iMTMwIiB5PSIyNDAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDYiIHJ4PSI2IiBmaWxsPSIjRjJBNjVBIiBvcGFjaXR5PSIwLjg1Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMjY3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMEIwRjE5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI3MDAiPkNvcnJlbyB5IHRhcmVhczwvdGV4dD4KPHJlY3QgeD0iMTMwIiB5PSIzMDAiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDYiIHJ4PSI2IiBmaWxsPSIjNEZEMUM1IiBvcGFjaXR5PSIwLjUiLz4KPHRleHQgeD0iMjAwIiB5PSIzMjciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwQjBGMTkiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjcwMCI+VHJhYmFqbyBwcm9mdW5kbzwvdGV4dD4KPC9zdmc+" width="512" height="512" loading="lazy" alt="Calendario diario dividido en bloques de tiempo: trabajo profundo, reuniones, correo y tareas, y de nuevo trabajo profundo">
+<figcaption>Reservar bloques fijos para trabajo profundo evita que las reuniones y el correo se coman todo el día.</figcaption>
+</figure>
+
+
+<p>Un patrón sencillo que funciona para trabajo de oficina o freelance:</p>
+<ol class="workflow">
+<li><strong>Bloquea primero el trabajo profundo.</strong> Reserva 2-3 horas por la mañana antes de mirar el correo, para la tarea que más concentración exige.</li>
+<li><strong>Agrupa las reuniones.</strong> Si puedes elegir, concéntralas en una franja del día para no fragmentar el resto.</li>
+<li><strong>Dedica un bloque fijo al correo y los mensajes.</strong> Dos o tres veces al día, no de forma continua entre tarea y tarea.</li>
+<li><strong>Deja huecos de colchón.</strong> Un bloque de 15-30 minutos entre tareas absorbe los imprevistos sin descuadrar todo el día.</li>
+<li><strong>Revisa al final del día.</strong> Ajusta el calendario de mañana según lo que realmente se movió hoy, no según el plan ideal.</li>
+</ol>
+
+<p>Técnicas como <strong>Pomodoro</strong> (25 minutos de foco + 5 de descanso) encajan bien dentro de cada bloque de trabajo profundo, especialmente para tareas que cuesta arrancar.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjQwIiByPSIxMzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIxMCIvPgo8cGF0aCBkPSJNMjU2IDExMCBBMTMwIDEzMCAwIDAgMSAzNzUgMzAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNGMkE2NUEiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8dGV4dCB4PSIyNTYiIHk9IjIzMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0U4RUNGNCIgZm9udC1mYW1pbHk9IlNwYWNlIEdyb3Rlc2ssIEFyaWFsIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNzAwIj4yNTowMDwvdGV4dD4KPHRleHQgeD0iMjU2IiB5PSIyNjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM5QUE1QjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMyI+ZW5mb3F1ZTwvdGV4dD4KPGcgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjExIiBmaWxsPSIjOUFBNUI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4KPGNpcmNsZSBjeD0iMTgwIiBjeT0iNDAwIiByPSIxNiIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjIiLz4KPGNpcmNsZSBjeD0iMjIwIiBjeT0iNDAwIiByPSIxNiIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjIiLz4KPGNpcmNsZSBjeD0iMjYwIiBjeT0iNDAwIiByPSIxNiIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPGNpcmNsZSBjeD0iMzAwIiBjeT0iNDAwIiByPSIxNiIgZmlsbD0iIzBGMTQyMCIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iMjQwIiB5PSI0NDAiPjIgZGUgNCBwb21vZG9yb3MgY29tcGxldGFkb3M8L3RleHQ+CjwvZz4KPC9zdmc+" width="512" height="512" loading="lazy" alt="Temporizador circular de estilo Pomodoro marcando 25 minutos de tiempo de enfoque, con un contador de dos pomodoros completados de cuatro">
+<figcaption>Cuatro pomodoros de 25 minutos con descansos cortos equivalen a unas dos horas de trabajo enfocado real.</figcaption>
+</figure>
+
+
+<h2 id="seguridad-basica">4. Contraseñas: la pieza de productividad que casi todos ignoran</h2>
+
+<p>Reutilizar contraseñas o intentar recordarlas todas no es solo un riesgo de seguridad: es fricción diaria acumulada cada vez que tienes que restablecer un acceso olvidado. Un gestor de contraseñas elimina ese coste de un golpe.</p>
+
+<figure class="img-slot">
+<img class="ph-img" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE0MUIyQiIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjYzMDRBIiBzdHJva2Utd2lkdGg9IjIiLz4KPHJlY3QgeD0iMTc2IiB5PSIyMjAiIHdpZHRoPSIxNjAiIGhlaWdodD0iMTMwIiByeD0iMTQiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzRGRDFDNSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxwYXRoIGQ9Ik0yMDYgMjIwIHYtNDAgYTUwIDUwIDAgMCAxIDEwMCAwIHY0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNEZEMUM1IiBzdHJva2Utd2lkdGg9IjEwIi8+CjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI3NSIgcj0iMTQiIGZpbGw9IiMxODIzMzgiIHN0cm9rZT0iI0YyQTY1QSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxyZWN0IHg9IjI1MCIgeT0iMjg1IiB3aWR0aD0iMTIiIGhlaWdodD0iMjYiIHJ4PSI0IiBmaWxsPSIjRjJBNjVBIi8+CjxnIGZvbnQtZmFtaWx5PSJKZXRCcmFpbnMgTW9ubywgbW9ub3NwYWNlIiBmb250LXNpemU9IjExIiBmaWxsPSIjOUFBNUI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4KPHRleHQgeD0iMjU2IiB5PSIzOTUiPuKXj+KXj+KXj+KXj+KXj+KXj+KXj+KXj+KXj+KXj+KXj+KXjzwvdGV4dD4KPC9nPgo8ZyBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM2OTczOEEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPgo8dGV4dCB4PSIxMzAiIHk9IjQ0MCI+Q29ycmVvPC90ZXh0Pgo8dGV4dCB4PSIyNTYiIHk9IjQ0MCI+QmFuY2E8L3RleHQ+Cjx0ZXh0IHg9IjM4MiIgeT0iNDQwIj5UcmFiYWpvPC90ZXh0Pgo8L2c+CjxjaXJjbGUgY3g9IjEzMCIgY3k9IjQxMCIgcj0iMTgiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjM4MiIgY3k9IjQxMCIgcj0iMTgiIGZpbGw9IiMwRjE0MjAiIHN0cm9rZT0iIzI2MzA0QSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPg==" width="512" height="512" loading="lazy" alt="Bóveda digital de contraseñas cifradas con candado, conectada a distintas cuentas como correo, banca y trabajo">
+<figcaption>Una única contraseña maestra protege el acceso a todas las demás, generadas y guardadas automáticamente.</figcaption>
+</figure>
+
+
+<div class="table-wrap">
+<table class="compare">
+<thead>
+<tr><th>Herramienta</th><th>Punto fuerte</th><th>Plan gratuito</th><th>Ideal para</th></tr>
+</thead>
+<tbody>
+<tr><td>Bitwarden</td><td>Código abierto y multiplataforma</td><td class="free">Completo, sin límite de contraseñas</td><td>Quien quiere el gestor gratuito más completo</td></tr>
+<tr><td>Google Password Manager</td><td>Integrado en Chrome y Android</td><td class="free">Incluido con la cuenta de Google</td><td>Uso casual sin instalar nada extra</td></tr>
+<tr><td>Proton Pass</td><td>Cifrado de extremo a extremo</td><td class="free">Con límite de alias de correo</td><td>Quien ya usa el ecosistema Proton</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Combina el gestor de contraseñas con la <strong>verificación en dos pasos</strong> en correo, banca y redes sociales; es la mejora de seguridad con mayor impacto por minuto invertido en configurarla.</p>
+
+<h2 id="sistema-completo">Cómo encajan las cuatro piezas juntas</h2>
+<p>Ninguna herramienta suelta resuelve la productividad; lo que funciona es el conjunto: las notas capturan lo que aprendes y decides, el tablero muestra en qué estás trabajando ahora mismo, el calendario protege el tiempo para hacerlo, y el gestor de contraseñas elimina la fricción diaria de acceder a todo lo demás. Empieza con una sola pieza, úsala dos semanas seguidas antes de añadir la siguiente, y evita el error más común: montar un sistema perfecto que nunca llegas a usar.</p>
+</div>
+</article>
+
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<span>© 2026 TechDev Lab. Contenido sobre IA, redes y automatización.</span>
+<nav aria-label="Enlaces del pie de página">
+<ul>
+<li><a href="#ia-y-automatizacion">IA y Automatización</a></li>
+<li><a href="#redes-y-sistemas">Redes y Sistemas</a></li>
+<li><a href="#programacion-y-scripting">Programación y Scripting</a></li>
+<li><a href="#herramientas-y-productividad">Herramientas y Productividad</a></li>
+</ul>
+</nav>
+</div>
+</footer>
+
+</body>
+</html>
